@@ -26618,11 +26618,12 @@ function config (name) {
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],183:[function(require,module,exports){
-(function (global,Buffer){(function (){
+(function (global){(function (){
 global.window.axios = require('axios');
 global.window.aesCmac = require('node-aes-cmac').aesCmac;
-global.window.Buffer = Buffer
-}).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
+global.window.Buffer = require('buffer');
+
+}).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"axios":184,"buffer":64,"node-aes-cmac":211}],184:[function(require,module,exports){
 module.exports = require('./lib/axios');
 },{"./lib/axios":186}],185:[function(require,module,exports){
